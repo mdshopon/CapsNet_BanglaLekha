@@ -1,20 +1,4 @@
-"""
-Keras implementation of CapsNet in Hinton's paper Dynamic Routing Between Capsules.
-The current version maybe only works for TensorFlow backend. Actually it will be straightforward to re-write to TF code.
-Adopting to other backends should be easy, but I have not tested this. 
 
-Usage:
-       python CapsNet.py
-       python CapsNet.py --epochs 100
-       python CapsNet.py --epochs 100 --num_routing 3
-       ... ...
-       
-Result:
-    Validation accuracy > 99.5% after 20 epochs. Still under-fitting.
-    About 110 seconds per epoch on a single GTX1070 GPU card
-    
-Author: Xifeng Guo, E-mail: `guoxifeng1990@163.com`, Github: `https://github.com/XifengGuo/CapsNet-Keras`
-"""
 import numpy as np
 from keras import layers, models, optimizers
 from keras import backend as K

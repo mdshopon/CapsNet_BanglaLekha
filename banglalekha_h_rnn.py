@@ -12,7 +12,7 @@ from keras.callbacks import ModelCheckpoint
 # Training parameters.
 batch_size = 32
 num_classes = 84
-epochs = 5
+epochs = 120
 
 # Embedding dimensions.
 row_hidden = 128
